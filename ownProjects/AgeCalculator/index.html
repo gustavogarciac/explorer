@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+        }
+        main {
+            padding: 30% 10%;
+            height: 100vh;
+            background-image: linear-gradient(135deg, rgb(26, 72, 158), rgb(248, 186, 248));
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .form h1, span {
+            color: #fff;
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        .form h1 > span {
+            color: rgb(248, 248, 109);
+        }
+        .formContent {
+            background-color: rgba(255, 255, 255, 0.322);
+            width: fit-content;
+            padding: 1rem;
+            border-radius: .5rem;
+
+            display: flex;
+            gap: .8rem;
+        }
+        .formContent input:first-child {
+            width: 15rem;
+            border: none;
+            padding: 0.5rem;
+            border-radius: .4rem;
+        }
+        .formContent input:nth-child(2) {
+            padding: 0.5rem 1rem;
+            background-color: rgb(248, 248, 109);
+            border: none;
+            border-radius: .4rem;
+            font-size: .8rem;
+            cursor: pointer;
+        }
+        .result {
+            color: white;
+            font-size: 1.3rem;
+        }
+        .result span {
+            color: rgb(248, 248, 109);
+        }
+    </style>
+    <title>Age Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <h1>Javascript <br><span></span></h1>
+            <div class="formContent">
+                <input type="date" name="date" id="date" value="2023-10-19" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                <input type="submit" id="submit" value="Calculate" onclick="calculateAge()">
+            </div>
+            <div class="result"></div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('main h1 span', {
+            strings: [
+                'Age Calculator'
+            ],
+            typeSpeed: 150,
+            backSpeed: 150,
+        })
+
+        let userInput = document.getElementById('date')
+
+        userInput.max = new Date().toISOString().split('T')[0];
+
+        function calculateAge() {
+            let birthDate = new Date(userInput.value)
+
+            let birthDay = birthDate.getDate();
+            let birthMonth = birthDate.getMonth() + 1;
+            let birthYear = birthDate.getFullYear();
+
+            let today = new Date()
+
+            let todayDay = today.getDate();
+            let todayMonth = today.getMonth() + 1;
+            let todayYear = today.getFullYear();
+
+            let days, months, years;
+            years = todayYear - todayYear
+            
+            if(todayMonth >= birthMonth) {
+                months = todayMonth - birthMonth 
+            } else {
+                years--;
+                months = 12 + todayMonth - birthMonth
+            }
+
+            if(todayDay >= birthDay) {
+                days = todayDay - birthDay
+            } else {
+                months--;
+                days = getDaysInMonth(birthYear, birthMonth) + todayDay - birthDay
+            }
+            if(months < 0){
+                months = 11;
+                years--;
+            }
+            console.log(years,months,days)
+        }
+
+        function getDaysInMonth(year, month) {
+            return new Date(year, month, 0).getDate();
+        }
+    </script>
+</body>
+</html>
