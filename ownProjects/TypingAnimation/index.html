@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>I'm <span class="autoType"></span></h1>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        const html = document.querySelector('html')
+        var typed = new Typed(".autoType", {
+            strings: [
+                'Coding', 'Learning', 'Sleeping', 'Drinking Coffee', 'in love.', 'a Dev.'
+            ],
+            typeSpeed: 250,
+            backSpeed: 250,
+            loop: true,
+            cursorChar: `/`,
+        })
+
+        html.addEventListener('keydown', function(event) {
+            switch (event.key) {
+                case ('='):
+                    typed.typeSpeed -= 30
+                    typed.backSpeed -= 30
+                    break
+                case ('-'):
+                    typed.typeSPeed += 30
+                    typed.backSpeed += 30
+                    break
+            }
+        })
+    </script>
+</body>
+</html>
