@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Drag and Drop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root {
+            font-size: 1px;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #7046ac, #c54db1);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .to-do, .done {
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            background-color: #ebecf0;
+            padding: 10px 20px;
+            overflow-y: auto;
+            border-radius: 4px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .to-do-header, .done-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .to-do-header h1, .done-header h1 {
+            font-size: 19rem;
+            color: #112448;
+            position: relative;
+        }
+        .to-do-header h1::after {
+            content: '';
+            width: 0px;
+            height: 2px;
+            background-color: #112448;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            transition: width .3s ease-in-out;
+        }
+        .done-header h1::after {
+            content: '';
+            width: 0px;
+            height: 2px;
+            background-color: #112448;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            transition: width .3s ease-in-out;
+        }
+        .to-do-header h1:hover::after {
+            width: 100px;
+        }
+        .done-header h1:hover::after {
+            width: 50px;
+        }
+        .to-do-header i, .done-header i {
+            font-size: 25rem;
+            color: #112448;
+            font-weight: bold;
+        }
+
+        .to-do-header i:hover, .done-header i:hover {
+            background-color: #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .list {
+            font-size: 14rem;
+
+            width: 100%;
+            height: fit-content;
+            padding: 2rem 4rem;
+            background-color: #ffffff;
+            border-radius: 4px;
+            color: #292929;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="to-do">
+            <div class="to-do-header">
+
+                <h1>Itens to do</h1>
+                
+                <i class="ph ph-dots-three"></i>
+
+            </div>
+
+            <div class="list" draggable="true" contenteditable="true">
+                <i class="ph ph-dots-six-vertical"></i>
+                List item 1
+            </div>
+
+            <div class="list" draggable="true">
+                <i class="ph ph-dots-six-vertical"></i>
+                List item 2
+            </div>
+
+            <div class="list" draggable="true">
+                <i class="ph ph-dots-six-vertical"></i>
+                List item 3
+            </div>
+
+            <div class="list" draggable="true">
+                <i class="ph ph-dots-six-vertical"></i>
+                List item 4
+            </div>
+
+        </div>
+
+        <div class="done">
+            <div class="done-header">
+
+                <h1>Done</h1>
+
+                <i class="ph ph-dots-three"></i>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
