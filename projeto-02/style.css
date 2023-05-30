@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.hero {
+
+    max-width: 640px;
+    margin: 64px auto 0;
+
+}
+
+.hero h1 {
+    font-size: 2em;
+    color: #3F3D56;
+    letter-spacing: -1px;
+    line-height: 2em;
+}
+
+.hero h1 span {
+    color: #EE24FF;
+}
+
+.hero p {
+    color: #828282;
+}
+
+.hero strong {
+    color: #494949;
+}
+
+.hero span {
+    font-weight: bold;
+}
+
+footer {
+    width: 300px;
+    margin: 24px auto;
+    padding-top: 12px;
+    border-top: 1px solid #828282;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F3D56;
+
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
