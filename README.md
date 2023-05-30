@@ -15,5 +15,5 @@ Segue, em ordem crescente, os projetos realizados:
 
 ### Landing Page Móveis
 <a href="https://gustavogarciac.github.io/explorer/projeto-01/" target="_blank" align="center">
-  <img src="projeto-01/assets/thumbnail.jpg">
+  <img src="projeto-01/assets/thumbnail.png">
 </a>
