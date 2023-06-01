@@ -34,7 +34,7 @@ Segue, em ordem crescente, os projetos realizados:
 </a>
 
 ### 🪑 Card Produto
-<a href="https://gustavogarciac.github.io/explorer/projeto-04/" target="_blank" align="center">
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
   <img src="extra-projects/card-produto/assets/thumbnail.png">
 </a>
 
