@@ -33,6 +33,14 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="projeto-04/assets/thumbnail.png">
 </a>
 
+
+## 🐱‍👤 Projetos boraCodar
+
+### 🎶 Player Música
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
+  <img src="extra-projects/card-produto/assets/thumbnail.png">
+</a>
+
 ### 🪑 Card Produto
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
   <img src="extra-projects/card-produto/assets/thumbnail.png">
