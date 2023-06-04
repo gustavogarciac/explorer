@@ -37,8 +37,8 @@ Segue, em ordem crescente, os projetos realizados:
 ## 🐱‍👤 Projetos Extras
 
 ### 🎶 Player Música
-<a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
-  <img src="extra-projects/card-produto/assets/thumbnail.png">
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/player-musica/" target="_blank" align="center">
+  <img src="extra-projects/player-musica/assets/thumbnail.png">
 </a>
 
 ### 🪑 Card Produto
