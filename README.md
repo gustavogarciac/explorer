@@ -34,7 +34,7 @@ Segue, em ordem crescente, os projetos realizados:
 </a>
 
 
-## 🐱‍👤 Projetos boraCodar
+## 🐱‍👤 Projetos Extras
 
 ### 🎶 Player Música
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
@@ -44,5 +44,10 @@ Segue, em ordem crescente, os projetos realizados:
 ### 🪑 Card Produto
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/card-produto/" target="_blank" align="center">
   <img src="extra-projects/card-produto/assets/thumbnail.png">
+</a>
+
+### 🚀 Landing Page Intensivão
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/projeto-intensivao/" target="_blank" align="center">
+  <img src="extra-projects/projeto-intensivao/assets/thumbnail.png">
 </a>
 
