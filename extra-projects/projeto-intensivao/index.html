@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Intensivão</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-text-headline">
+                <h1>Explore sem limites</h1>
+                <p>Porque o aprendizado é contínuo</p>
+            </div>
+            <button><a href="#form-content"><img src="images/arrow-down.svg" alt="Flecha para baixo para ir até a seção do formulário"></a></button>
+        </div>
+        <div class="hero-image">
+            <img src="images/astronaut.png" alt="Cartoon de Astronauta flutuando no espaço, com 5 planetas em seu redor.">
+        </div>
+    </section>
+
+    <section class="informative">
+        <div class="info">
+            <img src="images/yellow-moon.png" alt="">
+
+            <h1>Não pare nunca</h1>
+            <p>Se você deseja ter sucesso nos estudos é fundamental que você adote uma mentalidade de "Não pare nunca". Estudar de forma consciente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+        </div>
+        <div class="info">
+            <img src="images/blue-moon.png" alt="">
+
+            <h1>Só volta</h1>
+            <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+        </div>
+        <div class="info">
+            <img src="images/pink-moon.png" alt="">
+
+            <h1>Siga seu ritmo</h1>
+            <p>Avançar pouco a pouco mantém progresso constante em objetivos. Evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+        </div>
+    </section>
+
+    <section id="form-content">
+        <form action="contato.php">
+            <h1>Entre em contato</h1>
+            <label for="name">Insira seu nome</label>
+            <div class="name-input">
+                <i class="ph ph-user-circle"></i>
+                <input type="text" name="name" id="name" placeholder="Seu nome" required minlength="5">
+            </div>
+            <label for="email">Insira seu e-mail</label>
+            <div class="email-input">
+                <i class="ph ph-envelope-open"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <textarea name="" id="" cols="15" rows="5" placeholder="Insira sua mensagem aqui..." required></textarea>
+            <input type="submit" value="Enviar mensagem" id="submit-btn">
+        </form>
+        <img src="images/stars.png" alt="" id="stars-dec">
+    </section>
+
+    <footer>
+        <small>Desenvolvido com muito 💜 por Gustavo Garcia durante a realização do curso Explorer da Rocketseat.</small>
+    </footer>
+</body>
+</html>
