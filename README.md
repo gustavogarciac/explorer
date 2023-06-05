@@ -33,6 +33,11 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="projeto-04/assets/thumbnail.png">
 </a>
 
+### 📄 Projeto Criação de Eventos
+<a href="https://gustavogarciac.github.io/explorer/projeto-05/" target="_blank" align="center">
+  <img src="projeto-05/assets/thumbnail.png">
+</a>
+
 
 ## 🐱‍👤 Projetos Extras
 
