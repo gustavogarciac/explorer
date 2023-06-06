@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #E5E5E5;
+}
+h1, h2, legend {
+    font-family: 'Staatliches';
+    font-weight: 400;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.page::before {
+    content: '';
+    width: 100%;
+    height: 400px;
+    background-color: #535971;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    width: 750px;
+    margin: auto;
+}
+
+header h1 {
+    padding-top: 100px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+header p {
+    width: 50%;
+    color: #fff;
+    margin: 18px 0 58px;
+}
+
+form {
+    width: 750px;
+    min-height: 400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 64px;
+}
+
+fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 30px;
+}
+
+fieldset legend {
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper label {
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+.input-wrapper label span:hover {
+    color: #58565e;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 56px;
+    border: 1px solid #E6E6F0;
+    background-color: #FAFAFC;
+    padding: 0 1em;
+    font-size: 16px;
+
+    display: block;
+}
+
+.input-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.first-name-input, .second-name-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-wrapper h2 {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #535971;
+}
+
+.date-wrapper {
+    display: flex;
+    gap: 10px;
+}
+.date-wrapper input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.date-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.button-submit {
+    width: 750px;
+    margin: auto;
+    padding: 60px 64px;
+    border-radius: 0 0 12px 12px;
+
+    background-color: #535971;
+    margin-bottom: 100px;
+}
+
+.button-submit button {
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #FF5374;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-submit button:hover {
+    filter: brightness(0.9);
+}
