@@ -58,6 +58,10 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="projeto-07/assets/thumbnail.png">
 </a>
 
+### 🔨 Whack a Mole
+<a href="https://gustavogarciac.github.io/explorer/projeto-08/" target="_blank" align="center">
+  <img src="projeto-08/assets/thumbnail.png">
+</a>
 
 ## 🐱‍👤 Projetos Extras
 
