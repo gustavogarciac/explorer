@@ -48,6 +48,16 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="projeto-05/basic-form/assets/thumbnail.png">
 </a>
 
+### 🎈 Image Gallery
+<a href="https://gustavogarciac.github.io/explorer/projeto-06/" target="_blank" align="center">
+  <img src="projeto-06/assets/thumbnail.png">
+</a>
+
+### 🍨 Space Cream
+<a href="https://gustavogarciac.github.io/explorer/projeto-07/" target="_blank" align="center">
+  <img src="projeto-07/assets/thumbnail.png">
+</a>
+
 
 ## 🐱‍👤 Projetos Extras
 
