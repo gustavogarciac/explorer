@@ -81,6 +81,6 @@ Segue, em ordem crescente, os projetos realizados:
 </a>
 
 ### ✨ MultiStep Form
-<a href="https://gustavogarciac.github.io/explorer/extra-projects/multistep-form/" target="_blank" align="center">
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/multistep/" target="_blank" align="center">
   <img src="extra-projects/multistep-form/assets/thumbnail.png">
 </a>
