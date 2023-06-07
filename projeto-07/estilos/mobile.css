@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-color: #EFF1FF;
+    --heading-bg-color: #CBC0D3;
+    --label-bg-color: #FEEAFA;
+    --header-bg-color: #8E9AAF;
+    --text-color: #4A4E69;
+    font-size: 62.5%;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #a99faf;
+    border-radius: 8px;
+}
+body {
+    font-family: 'Palanquin', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    padding: 4rem 0;
+    text-align: center;
+    grid-area: header;
+}
+
+.heading {
+    background-color: var(--heading-bg-color);
+}
+header h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.4rem;
+    margin-top: 2rem;
+    padding: 8px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+header img {
+    animation: upscale 1400ms ease backwards;
+}
+.header-paragraph {
+    display: none;
+    padding: 32px 48px 0;
+    color: #fff;
+    font-size: 2rem;
+}
+main {
+    padding: 5rem 3.2rem;
+    grid-area: main;
+
+    display: grid;
+    gap: 3.2rem;
+
+    background-color: var(--main-bg-color);
+}
+main > p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+}
+.image-box {
+    width: 100%;
+    position: relative;
+
+    animation: downtop 1400ms 1400ms ease backwards;
+}
+.image-box img {
+    width: 100%;
+    object-fit: cover;
+}
+.image-label {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    background-color: var(--label-bg-color);
+    padding: 0 2.4rem;
+    height: 3.4rem;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+
+    animation: topdown 1400ms 2800ms ease backwards;
+}
+.image-label h2 {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+}
+footer {
+    display: none;
+    grid-area: footer;
+
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #4A4E69;
+    text-align: center;
+    background-color: var(--main-bg-color);
+}
+footer a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #4A4E69;
+}
+
+@keyframes downtop {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes upscale {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        flex-basis: 20%;
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+    .header-paragraph {
+        display: block;
+    }
+    .main-paragraph {
+        display: none;
+    }
+    footer {
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+    }
+    .gallery-box {
+        max-height: 532px;
+        display: grid;
+        grid-template-areas:
+        'A B C'
+        'D B E'
+        'D F E';
+        place-content: center;
+        gap: 2.5rem;
+    }
+    .gallery-box .image-box:nth-child(1) {
+        grid-area: A;
+    }
+    .gallery-box .image-box:nth-child(2) {
+        grid-area: B;
+    }
+    .gallery-box .image-box:nth-child(3) {
+        grid-area: F;
+    }
+    .gallery-box .image-box:nth-child(4) {
+        grid-area: D;
+    }
+    .gallery-box .image-box:nth-child(5) {
+        grid-area: C;
+    }
+    .gallery-box .image-box:nth-child(6) {
+        grid-area: E;
+    }
+    .image-box img {
+        max-width: 220px;
+        height: 100%;
+        border-radius: 8px;
+    }
+    .image-label {
+        display: none;
+    }
+}
