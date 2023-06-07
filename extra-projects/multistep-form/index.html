@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Formulário Multi Etapas</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="contact-step">
+                <div class="contact-step-header">
+                    <div class="select">
+                        <span>1</span>
+                        <p>Contato</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="disable">
+                        <span>2</span>
+                        <p>Empresa</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="disable">
+                        <span>3</span>
+                        <p>Projeto</p>
+                    </div>
+                </div>
+
+                <div class="contact-step-content">
+                    <fieldset>
+                        <div class="input-wrapper">
+                            <label for="user-name">Nome</label>
+                            <input type="text" name="user-name" id="user-name" required placeholder="Como prefere ser chamado">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="tel-contact">Telefone</label>
+                            <input type="number" name="tel-contact" id="tel-contact" placeholder=" Digite seu número de Whatsapp">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="user-email">E-mail</label>
+                            <input type="email" name="user-email" id="user-email" required placeholder="Digite seu e-mail">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="contact-step-cta">
+                    <button type="button">continuar</button>
+                </div>
+            </div>
+            
+            <div class="enterprise-step">
+                <div class="enterprise-step-header">
+                    <div class="complete">
+                        <span>1</span>
+                        <p>Contato</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="select">
+                        <span>2</span>
+                        <p>Empresa</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="disable">
+                        <span>3</span>
+                        <p>Projeto</p>
+                    </div>
+                </div>
+
+                <div class="enterprise-step-content">
+                    <fieldset>
+                        <div class="input-wrapper">
+                            <label for="enterprise-name">Nome da empresa</label>
+                            <input type="text" name="enterprise-name" id="enterprise-name" required placeholder="Qual é o nome da sua empresa" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="employee-number">Número de funcionários</label>
+                            <input type="number" name="employee-number" id="employee-number" placeholder="Digite o número de colaboradores" required>
+                        </div>
+                        <div class="input-wrapper textarea-wrapper">
+                            <label for="enterprise-details">Sobre seu negócio</label>
+                            <textarea name="enterprise-details" id="enterprise-details" placeholder="Fale um pouco sobre seus produtos ou serviços"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="enterprise-step-cta">
+                    <div>
+                        <button type="button" class="enterprise-step-cta-back">Voltar</button>
+                    </div>
+                    <div>
+                        <button type="button" class="enterprise-step-cta-continue">Continuar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-step">
+                <div class="project-step-header">
+                    <div class="complete">
+                        <span>1</span>
+                        <p>Contato</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="complete">
+                        <span>2</span>
+                        <p>Empresa</p>
+                    </div>
+                    <i class="ph ph-caret-right"></i>
+                    <div class="select">
+                        <span>3</span>
+                        <p>Projeto</p>
+                    </div>
+                </div>
+                <div class="project-step-content">
+                    <fieldset>
+                        <div class="input-wrapper textarea-wrapper">
+                            <label for="project-details">Objetivos do projeto</label>
+                            <textarea name="project-details" id="project-details" placeholder="Descreva quais os objetivos desse projeto"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="project-step-cta">
+                    <div>
+                        <button type="button" class="project-step-cta-back">Voltar</button>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-form">Enviar proposta</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
