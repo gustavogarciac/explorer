@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(217, 207, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 12px;
+            min-height: 350px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .container-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .container h1 {
+            color: #232323;
+            font-weight: 700;
+        }
+        .container small {
+            display: block;
+            font-size: 16px;
+            color: rgb(92, 92, 92);
+        }
+        .user-input {
+            margin: 0 auto;
+            display: flex;
+            width: fit-content;
+            height: 50px;
+            justify-content: center;
+        }
+        #user-number {
+            width: 100px;
+            padding: 0 1rem;
+            font-size: 20px;
+            background-color: rgb(236, 236, 236);
+            outline: 0;
+            border: 0;
+            border-radius: 4px 0px 0px 4px;
+        }
+        .send-number {
+            cursor: pointer;
+            background-color: rgb(131, 73, 197);
+            border: 0;
+            outline: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            padding: 0 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .show-result {
+            display: block;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            width: 80%;
+            margin: 0 auto;
+            color: #232323;
+        }
+        .correct {
+            color: green;
+        }
+        .result-container {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-heading">
+            <h1>Jogo da Adivinhação</h1>
+            <small>Adivinhe o número entre 0 e 10</small>
+        </div>
+        <div class="user-input">
+            <input type="number" name="user-number" id="user-number" min="0" max="10" value="0">
+            <button class="send-number">Tentar</button>
+        </div>
+        <div class="show-result">
+            <p class="result-container"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
