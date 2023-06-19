@@ -89,3 +89,8 @@ Segue, em ordem crescente, os projetos realizados:
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/ajustes-iluminacao/" target="_blank" align="center">
   <img src="extra-projects/ajustes-iluminacao/assets/thumbnail.png">
 </a>
+
+### ❤ Cálculo IMC
+<a href="https://gustavogarciac.github.io/explorer/extra-projects/imc/src" target="_blank" align="center">
+  <img src="extra-projects/imc/src/assets/imc.png">
+</a>
