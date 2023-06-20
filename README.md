@@ -94,3 +94,5 @@ Segue, em ordem crescente, os projetos realizados:
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/imc/src" target="_blank" align="center">
   <img src="extra-projects/imc/src/assets/thumbnail.png">
 </a>
+
+
