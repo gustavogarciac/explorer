@@ -63,6 +63,16 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="projeto-08/assets/thumbnail.png">
 </a>
 
+### 🎆 Guess the Number!
+<a href="https://gustavogarciac.github.io/explorer/Javascript-DOM/guess-the-number/" target="_blank" align="center">
+  <img src="Javascript-DOM/guess-the-number/assets/thumbnail.png">
+</a>
+
+### 🍪 Lucky Biscuit!
+<a href="https://gustavogarciac.github.io/explorer/Javascript-DOM/lucky-biscuit/" target="_blank" align="center">
+  <img src="Javascript-DOM/lucky-biscuit/assets/thumbnail.png">
+</a>
+
 ## 🐱‍👤 Projetos Extras
 
 ### 🎶 Player Música
