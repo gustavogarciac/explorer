@@ -73,6 +73,11 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="Javascript-DOM/lucky-biscuit/assets/thumbnail.png">
 </a>
 
+### ➕ IMC Calculator
+<a href="https://gustavogarciac.github.io/explorer/Javascript-DOM/imc/" target="_blank" align="center">
+  <img src="Javascript-DOM/imc/assets/thumbnail.png">
+</a>
+
 ## 🐱‍👤 Projetos Extras
 
 ### 🎶 Player Música

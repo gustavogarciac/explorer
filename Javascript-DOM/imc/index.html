@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <script src="scripts/script.js" defer type="module"></script>
+</head>
+<body id="imc-app">
+  <div class="container">
+    <main class="card">
+      <form>
+        <h1 class="title">Cálculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="weight">Peso (kg)</label>
+          <input type="text" id="weight" placeholder="60">
+        </div>
+        <div class="input-wrapper">
+          <label for="height">Altura(cm)</label>
+          <input type="text" id="height" placeholder="165">
+        </div>
+
+        <button type="submit">Calcular IMC <img src="assets/arrow-up-right.svg" alt="Seta apontando para a direita."></button>
+      </form>
+    </main>
+  </div>
+
+  <div class="modal-wrapper">
+    <div class="modal card">
+      <h2 class="title">
+        <span>O seu IMC é de 28</span>
+        <button class="close"><img src="assets/close.svg" alt="Fechar"></button>
+      </h2>
+    </div>
+  </div>
+
+  <div class="alert-box">
+    <span>Digite somente números!</span>
+  </div>
+</body>
+</html>
