@@ -79,7 +79,7 @@ Segue, em ordem crescente, os projetos realizados:
 </a>
 
 ### 🍅 Focus Timer
-<a href="https://gustavogarciac.github.io/explorer/Javascript-DOM/focustimer-v2/" target="_blank" align="center">
+<a href="https://timer-tan.vercel.app/" target="_blank" align="center">
   <img src="Javascript-DOM/focustimer-v2/assets/thumbnail.png">
 </a>
 
