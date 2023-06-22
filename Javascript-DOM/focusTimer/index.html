@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador de estilo pomodoro.">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/index.js" defer type="module"></script>
+  <title>Focus Timer | Pomodoro</title>
+</head>
+<body id="pomodoro-app">
+  <div class="container">
+    <div class="timer-wrapper">
+      <div class="timer-stamp">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div class="button-wrapper">
+        <button class="play-button"><img src="assets/play-circle.svg" alt="Play Button"></button>
+        <button class="pause-button hide"><img src="assets/pause-circle.svg" alt="Pause Button"></button>
+        <button class="set-button"><img src="assets/stopwatch.svg" alt="Set timer Button"></button> 
+        <button class="stop-button hide"><img src="assets/stop-circle.svg" alt=""></button>
+      </div>
+    </div>
+
+    <footer>
+      <button class="sound-on"><img src="assets/volume-medium.svg" alt="Volume On Button"></button>
+      <button class="sound-off hide"><img src="assets/volume-mute.svg" alt="Volume mute Button"></button>
+    </footer>
+  </div>
+
+</body>
+</html>

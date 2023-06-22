@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #121214;
+  --base-color: 194;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+  --text-color: #fff;
+}
+
+#pomodoro-app, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+#pomodoro-app .container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  background-color: var(--bg-color);
+}
+
+#pomodoro-app .timer-wrapper {
+  justify-self: center;
+  align-self: flex-end;
+}
+#pomodoro-app .timer-stamp {
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  font-weight: 600;
+  display: flex;
+}
+
+#pomodoro-app .button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 3.2rem;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 4rem + 10vw, 10rem);
+  border-radius: 9999px;
+  background-color: var(--bg-primary-light);
+}
+#pomodoro-app button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#pomodoro-app button img {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+#pomodoro-app footer {
+  justify-self: end;
+  align-self: end;
+  padding: 2rem;
+}
+#pomodoro-app .hide {
+  display: none;
+}

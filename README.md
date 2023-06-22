@@ -78,6 +78,12 @@ Segue, em ordem crescente, os projetos realizados:
   <img src="Javascript-DOM/imc/assets/thumbnail.png">
 </a>
 
+### 🍅 Focus Timer
+<a href="https://gustavogarciac.github.io/explorer/Javascript-DOM/focustimer-v2/" target="_blank" align="center">
+  <img src="Javascript-DOM/focustimer-v2/assets/thumbnail.png">
+</a>
+
+
 ## 🐱‍👤 Projetos Extras
 
 ### 🎶 Player Música

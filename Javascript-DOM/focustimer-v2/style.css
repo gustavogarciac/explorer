@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --text-color: #29292E;
+  --active-button: #02799D;
+  --white: #fff;
+  --svg-fill: #323238;
+  --bg-body: #fff;
+  --bg-button: #E1E1E6;
+}
+
+.dark-theme {
+  --bg-body: #000;
+  --text-color: #fff;
+  --bg-button: #29292E;
+  --svg-fill: #C4C4CC;
+}
+
+#focustimer-app, html, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body#focustimer-app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  background-color: var(--bg-body);
+  transition: background .3s ease-in-out;
+}
+
+#focustimer-app .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+#focustimer-app .timer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+#focustimer-app .timer-stamp {
+  display: flex;
+}
+
+#focustimer-app .timer-stamp span {
+  font-size: clamp(7rem, 3rem + 20vw, 9rem);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+#focustimer-app .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#focustimer-app .button-wrapper button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+#focustimer-app .button-wrapper button:hover {
+  transform: scale(1.15);
+}
+#focustimer-app.dark-theme .button-wrapper button svg path {
+  fill: var(--svg-fill);
+}
+
+#focustimer-app .sound-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#focustimer-app .sound-wrapper {
+  border: 1px solid red;
+  height: clamp(20rem, 17rem + 5vw, 30rem);
+  width: clamp(17rem, 10rem + 6vw, 20rem);
+  border-radius: 1.5rem;
+  border: none;
+  background-color: var(--bg-button);
+  position: relative;
+  transition: background .3s ease-in-out;
+}
+#focustimer-app .sound-grid button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  gap: 2rem;
+}
+
+#focustimer-app .sound-wrapper.active {
+  background-color: var(--active-button);
+}
+#focustimer-app .sound-wrapper.active button svg path {
+  fill: var(--white);
+}
+#focustimer-app.dark-theme .sound-wrapper button svg path {
+  fill: var(--svg-fill);
+}
+
+#focustimer-app .sound-wrapper input {
+  position: absolute;
+  left: 2rem;
+  bottom: 4rem;
+}
+
+#focustimer-app .sound-wrapper .input-range{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--svg-fill);
+  border-radius: 9999px;
+  width: clamp(7rem, 13.5rem, 13.5rem);
+  height: .6rem;
+}
+#focustimer-app .sound-wrapper .input-range::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--svg-fill);
+}
+#focustimer-app .sound-wrapper.active .input-range{
+  background-color: var(--white);
+}
+#focustimer-app .sound-wrapper.active .input-range::-webkit-slider-thumb {
+  background-color: var(--white);
+}
+
+/* Theme Color */
+#focustimer-app .hide {
+  display: none;
+}
+#focustimer-app .theme-color {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  #focustimer-app .container {
+    width: clamp(20vw, 20rem + 28vw, 50vw);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #focustimer-app .sound-wrapper {
+    height: clamp(15rem, 14rem + 5vw, 18rem);
+  }
+}
