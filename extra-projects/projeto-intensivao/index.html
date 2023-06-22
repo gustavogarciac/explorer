@@ -1,70 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Projeto Intensivão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <title>Document</title>
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-text">
-            <div class="hero-text-headline">
-                <h1>Explore sem limites</h1>
-                <p>Porque o aprendizado é contínuo</p>
-            </div>
-            <button><a href="#form-content"><img src="images/arrow-down.svg" alt="Flecha para baixo para ir até a seção do formulário"></a></button>
-        </div>
-        <div class="hero-image">
-            <img src="images/astronaut.png" alt="Cartoon de Astronauta flutuando no espaço, com 5 planetas em seu redor.">
-        </div>
-    </section>
+  <section id="hero">
+    <div class="hero-image">
+      <img src="assets/astronaut.svg" alt="Cartoon de Astronauta com planetas atrás.">
+    </div>
+    <div class="hero-content">
+      <div class="hero-title">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
+      </div>
+      <a class="hero-cta" href="#form-area">
+        <img src="assets/arrow-down.svg" alt="Go to form Section button">
+      </a>
+    </div>
+  </section>
+  <section id="planet-tips">
+    <div class="card">
+      <img src="assets/planet-yellow.png" alt="Planeta Amarelo">
+      <h1>Não pare nunca</h1>
+      <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+    </div>
+    <div class="card">
+      <img src="assets/planet-blue.png" alt="Planeta Azul">
+      <h1>Só volta</h1>
+      <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+    </div>
+    <div class="card">
+      <img src="assets/planet-pink.png" alt="Planeta Rosa">
+      <h1>Siga seu ritmo</h1>
+      <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+    </div>
+  </section>
+  <section id="form-area">
+    <form>
+      <h1>Entre em contato</h1>
+      <div class="input-wrapper">
+        <img src="assets/person.svg" alt="Icone Nome de Usuário">
+        <input type="text" id="user-name" required>
+        <label for="user-name">Seu nome</label>
+      </div>
+      <div class="input-wrapper">
+        <img src="assets/email.svg" alt="">
+        <input type="email" id="user-email" required>
+        <label for="user-name">Email</label>
+      </div>
+      <div class="textarea-wrapper">
+        <textarea id="user-feedback" placeholder="Digite sua mensagem aqui..."></textarea>
+      </div>
+      <button class="send-form">Enviar mensagem</button>
+    </form>
+    <img src="assets/stars-background.png" alt="">
+  </section>
+  <footer>
+    <small>2023 - Rocketseat Explorer / Codado por Gustavo Garcia</small>
+  </footer>
+  <section id="modal" class="hide">
+    <div class="modal-card">
+      <h1>Muito obrigado!</h1>
+      <p>Agradecemos por sua mensagem. Responderemos ela assim que possível através do seu email.</p>
+      <div class="close-modal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+      
+      
+    </div>
+  </section>
 
-    <section class="informative">
-        <div class="info">
-            <img src="images/yellow-moon.png" alt="">
-
-            <h1>Não pare nunca</h1>
-            <p>Se você deseja ter sucesso nos estudos é fundamental que você adote uma mentalidade de "Não pare nunca". Estudar de forma consciente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
-        </div>
-        <div class="info">
-            <img src="images/blue-moon.png" alt="">
-
-            <h1>Só volta</h1>
-            <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
-        </div>
-        <div class="info">
-            <img src="images/pink-moon.png" alt="">
-
-            <h1>Siga seu ritmo</h1>
-            <p>Avançar pouco a pouco mantém progresso constante em objetivos. Evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
-        </div>
-    </section>
-
-    <section id="form-content">
-        <form action="contato.php">
-            <h1>Entre em contato</h1>
-            <label for="name">Insira seu nome</label>
-            <div class="name-input">
-                <i class="ph ph-user-circle"></i>
-                <input type="text" name="name" id="name" placeholder="Seu nome" required minlength="5">
-            </div>
-            <label for="email">Insira seu e-mail</label>
-            <div class="email-input">
-                <i class="ph ph-envelope-open"></i>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-            </div>
-            <textarea name="" id="" cols="15" rows="5" placeholder="Insira sua mensagem aqui..." required></textarea>
-            <input type="submit" value="Enviar mensagem" id="submit-btn">
-        </form>
-        <img src="images/stars.png" alt="" id="stars-dec">
-    </section>
-
-    <footer>
-        <small>Desenvolvido com muito 💜 por Gustavo Garcia durante a realização do curso Explorer da Rocketseat.</small>
-    </footer>
+  <script src="index.js"></script>
 </body>
 </html>
