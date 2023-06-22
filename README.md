@@ -98,7 +98,7 @@ Segue, em ordem crescente, os projetos realizados:
 
 ### 🚀 Landing Page Intensivão
 <a href="https://gustavogarciac.github.io/explorer/extra-projects/projeto-intensivao/" target="_blank" align="center">
-  <img src="extra-projects/projeto-intensivao/images/thumbnail.png">
+  <img src="extra-projects/projeto-intensivao/assets/thumbnail.png">
 </a>
 
 ### ✨ MultiStep Form
